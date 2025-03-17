@@ -11,3 +11,14 @@ This is a simple Flask application that demonstrates sequential thinking with Mu
 ## API Endpoints
 
 - GET `/`: Returns a hello world message
+- GET `/greet/<name>`: Returns a personalized greeting message for the provided name
+
+## Example Usage
+
+```bash
+# Get general greeting
+curl http://localhost:5000/
+
+# Get personalized greeting
+curl http://localhost:5000/greet/John
+```
